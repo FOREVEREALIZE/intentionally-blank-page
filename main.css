@@ -32,20 +32,51 @@ body {
     font-size: 5vh;
 }
 
-.theme-button {
-    transition: color 0.5s linear;
+.theme-button.light {
     position: absolute;
     top: 1vh;
     right: 1vh;
-    height: 4vh;
-    width: 4vh;
+    height: 6vh;
+    width: 6vh;
+    box-shadow: none;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
     background-color: rgba(0, 0, 0, 0);
     border: 0px;
     border-radius: 10px;
 }
 
-.theme-button:hover {
-    background-color: gray;
-    animation-name: example;
-    animation-duration: 0.2s;
+.theme-button.light:hover, .theme-button.light:active {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.theme-button.dark {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    height: 6vh;
+    width: 6vh;
+    box-shadow: none;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-radius: 10px;
+}
+
+.theme-button.dark:hover, .theme-button.dark:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.feather {
+    width: 4vh;
+    height: 4vh;
 }
