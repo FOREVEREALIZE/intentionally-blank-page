@@ -7,13 +7,27 @@
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>
-        <div class="main flex-container light">
-            <h1 class="text">
+        <div class="main flex-container light theme-affected" id="container">
+            <h1 class="bigtext font" id="bigtext">
                 This page was intentionally left blank.
             </h1>
-            <button class="theme-button light" id="theme-button">
+            <button class="theme-button light theme-affected" id="theme-button">
                 <i data-feather="sun" class="feather"></i>
             </button>
+            <button class="type-button light theme-affected" id="type-button">
+                <i data-feather="type" class="feather"></i>
+            </button>
+            <div class="popup-container pc-hide font pc-dark" id="popup-container">
+                <div class="popup p-dark theme-affected" id="popup">
+                    <h2 class="mediumtext light theme-affected">
+                        Change Text:
+                    </h2>
+                    <input type="text" class="textinput" value="This page was intentionally left blank." id="textinput" />
+                    <button class="light theme-affected cb-light" id="close-button">
+                        <i data-feather="x" class="feather"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
